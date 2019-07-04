@@ -6,8 +6,9 @@ const app = express()
 const apiKey = 'f6a0666696e8be61727e0660b737ab77';
 
 app.use(express.static('public'));
-app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs')
+app.use(bodyParser.urlencoded({ extended: true }));
+
 
 app.listen(3000, function () {
     console.log('Example app listening on port 3000!')
